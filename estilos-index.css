@@ -1,0 +1,283 @@
+/*fuente logo
+font-family: 'Lexend Giga', sans-serif;
+*/
+
+/*animacion para todos los enlaces*/
+a:hover{
+    color: rgb(236, 227, 56) ;
+}
+
+/* GENERALES */
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+.contenedor-full{
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    font-family: 'Lexend Giga', sans-serif;
+    color: black;
+}
+
+.logo-imagen{ /*logo del leon*/
+    width: 120px;
+    height: 120px;
+    background: url(imagenes/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    /*quita el punto a los items*/
+    list-style: none;
+    
+}
+
+h3{
+    padding-top: 10px;
+}
+
+
+/* HEADER */
+header .contenedor{
+
+    display: flex;
+    /*separa el menú en los extremos*/
+    justify-content: space-between;
+
+}
+
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+header ul li a{
+    color: rgb(255, 255, 255);
+    
+}
+header .menu nav a {
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+    border-right: 1px solid white;
+}
+
+header .logo{
+    font-size: 30px;
+}
+header .menu{
+    background: rgba(0, 0, 0, 0.484);
+}
+
+header{
+    /*pone degradado del fondo*/
+    background: linear-gradient(rgba(171, 174, 235, 0.9), rgba(14, 133, 253, 0.9));
+    /*ocupa el 100% del alto de la ventana*/
+    height: 100vh;
+    /*adapta la imagen al tamaño de la pantalla*/
+    background-size: cover;
+    
+}
+body{
+    background: rgba(14, 133, 253, 0.9);
+    
+}
+/* HEADER .cuenta*/
+header nav div{
+    display: flex;
+}
+
+
+/*HEADER juegos*/
+header .juegos nav ul{
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+header .juegos nav ul li:hover{
+    background: rgb(29, 24, 24);
+    transform: scale(1.25);
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+
+
+
+
+/* Borders de Botones*/
+header .juegos nav ul li{
+    padding: 10px 15px 10px 10px;
+    border-right: 1px dashed gray;
+    width: 100px;
+}
+
+header .juegos nav ul li:nth-child(1){
+    border-left: 1px dashed gray;
+}/* Borders de Botones*/
+
+
+header .juegos nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Header portada*/
+/*
+header .portada{
+    width: 100%;
+    height: 100%;
+    background: url(imagenes/portada-3.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
+
+
+/*SECCION POPULARES*/
+
+#populares{
+    display: flex;
+}
+
+#populares{
+    background: white;
+}
+
+#populares h4{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+#populares img{
+    flex-wrap: wrap;
+    width: 170px;
+    height: 210px;
+}
+
+#populares .item .info-producto {
+    text-align: center;
+}
+
+#populares .item .info-producto ul{
+    font-size: 13px;
+}
+/*alinea los productos*/
+#populares .img-producto a img{
+    padding-left: 30px;
+}
+
+
+/* BOTON INICIO DE PAGINA*/
+#boton-inicio{
+    background: rgb(238, 237, 237);
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: 1px 0;
+    margin-top: 100px;
+
+}
+
+#boton-inicio a:hover{
+    color: rgb(40, 43, 233);
+    
+}
+#boton-inicio a{
+    display: block;  
+}
+
+#boton-inicio:hover{
+    background: rgb(191, 213, 253);
+}
+
+/* FOOTER */
+footer{
+    
+    background: white;
+}
+
+
+footer .contenedor{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .contenedor div{
+    margin: 10px 20px 10px 20px;
+}
+
+footer a{
+    font-size: 13px;
+    line-height: 1px;
+    color: rgb(133, 128, 128);
+    
+}
+
+footer #informacion{
+    margin-bottom: 80px;
+}
+
+footer h4{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+footer #img-formas-de-pago{
+    width: 110px;
+    height: 130px;
+    background: url(imagenes/formas-de-pago.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer #redes ul{
+    display: flex;
+}
+
+footer #redes ul li a{
+    margin-left: 5px;
+    justify-content: space-around;
+}
+
+footer #final p{
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
