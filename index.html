@@ -34,11 +34,14 @@
                 
                 <nav>
                     <ul>
-                        <li><a href="">Nosotros</a></li>
-                        <li><a href="">Contáctanos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
                         <div>
                             <img src="imagenes/account.png" alt="">
-                            <li><a href="">Cuenta</a></li>
+                            <li><a href="cuenta.html">Cuenta</a></li>
+                        </div>
+                        <div>
+                            <img src="imagenes/carrito-de-compras.png" alt="" style="width: 30px;">
+                            <li><a href="cuenta.html">Mi Carrito</a></li>
                         </div>
                     </ul>
                 </nav>
@@ -46,14 +49,13 @@
             </div>
         </div>
 
-        <div class="juegos sticky-top">
+        <div class="juegos sticky-top" style="background: rgb(94, 126, 185);">
             <nav>
                 <ul>
                     <li><a href="ps4.html">PS4</a></li>
                     <li><a href="xbox.html">Xbox One</a></li>
                     <li><a href="nintendo.html">Nintendo</a></li>
-                    <li><a href="">Consolas</a></li>
-                    <li><a href="">Funko</a></li>
+                    <li><a href="funko.html">Funko</a></li>
                     
                 </ul>
             </nav>
@@ -90,7 +92,7 @@
             <!--Nintendo-->
             <div class="seccion-popular" id="nintendo">
                 <hr>
-                <h4>Nintendo</h4>
+                <h4><a style="color: red;" href="nintendo.html">Nintendo</a></h4>
                 <div id = "carrusel-productos-nintendo" class="owl-carousel owl-theme">
                  
                     <div class="item">
@@ -102,6 +104,11 @@
                                 <li>Mario Kart Deluxe 8</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                
+                                <form action="añadir-a-carrito" method="POST" >
+                                    <input type="button" value="Añadir al carrito">
+                                </form>
+
                             </ul>
                         </div>
                     </div>
@@ -223,7 +230,7 @@
 
             <!--Playstation-->
             <div class="seccion-popular" id="playstation">
-                <h4>Playstation</h4>
+                <h4><a style="color: rgb(37, 37, 216);"href="ps4.html">Playstation</a></h4>
                 <div id = "carrusel-productos-playstation"class="owl-carousel owl-theme">
                  
                     <div class="item">
@@ -358,7 +365,7 @@
             <!--Xbox One-->
             <div class="seccion-popular" id="xbox-one">
                 
-                <h4>Xbox One</h4>
+                <h4><a style="color: rgb(0, 126, 31);"href="xbox.html">Xbox One</a></h4>
                 <div id ="carrusel-productos-xbox-one" class="owl-carousel owl-theme">
                  
                     <div class="item">
@@ -492,7 +499,7 @@
             <!--Xbox One-->
             <div class="seccion-popular" id="coleccionables">
                 
-                <h4>Coleccionables</h4>
+                <h4><a href="funko.html">Coleccionables</a></h4>
                 <div id = "carrusel-productos-coleccionables" class="owl-carousel owl-theme">
                  
                     <div class="item">
