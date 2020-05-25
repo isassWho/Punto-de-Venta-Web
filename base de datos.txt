@@ -1,0 +1,55 @@
+BASE DE DATOS
+
+create database lyongames_db;
+
+-------------------------------------------
+USUARIOS
+
+create table usuarios(
+    correo     varchar(30) PRIMARY KEY,
+    password   varchar(30),
+    nombre     varchar(30),
+    apellido   varchar(30),
+    tipo       varchar(20)
+);
+
+insert into usuarios values ("i@i.com", "123", "isai", "lugo", "admin");
+
+-------------------------------------------
+CATEGORIAS
+create table categoria(
+    id_categoria varchar(20) PRIMARY key,
+    nombre varchar(20)
+);
+
+insert into categoria values ("C1","playstation");
+insert into categoria values ("C2","xbox_one");
+insert into categoria values ("C3","nintendo");
+insert into categoria values ("C4","funko");
+
+-------------------------------------------
+PRODUCTOS
+create table productos(
+    foreign key id_categoria references categoria(id_categoria),
+    id_producto varchar(30) PRIMARY  key,
+    descripcion varchar(50),
+    precio varchar(20)
+);
+
+insert into productos values ("C1","P1","Mario Kart 8","999");
+
+
+-------------------------------------------
+CARRITO
+
+create table carrito_$nombre_$apellido(
+    
+
+
+);
+
+------------------------------------------
+
+
+
+

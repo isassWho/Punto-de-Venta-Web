@@ -50,7 +50,7 @@ a{
 li{
     /*quita el punto a los items*/
     list-style: none;
-    
+
 }
 
 h3{
@@ -78,14 +78,14 @@ header ul{
 }
 
 header ul li{
-    
+
     margin-right: 5px;
     margin-left: 10px;
 }
 
 header ul li a{
     color: rgb(255, 255, 255);
-    
+
 }
 header .menu nav a {
     font-size: 11px;
@@ -107,11 +107,11 @@ header{
     height: 100vh;
     /*adapta la imagen al tamaño de la pantalla*/
     background-size: cover;
-    
+
 }
 body{
     background: rgba(255, 255, 255, 0.9);
-    
+
 }
 /* HEADER .cuenta*/
 header nav div{
@@ -126,7 +126,7 @@ header nav div{
     border: 1px solid #ccc;
     background-color: #f1f1f1;
   }
-  
+
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
@@ -137,17 +137,17 @@ header nav div{
     padding: 14px 16px;
     transition: 0.3s;
   }
-  
+
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
   }
-  
+
   /* Create an active/current tablink class */
   .tab button.active {
     background-color: #ccc;
   }
-  
+
   /* Style the tab content */
   .tabcontent {
     display: none;
@@ -196,7 +196,7 @@ header nav div{
 
   form p{
     font-family: 'Poppins', sans-serif;
-   font-size: 13px; 
+   font-size: 13px;
   }
 
   form div{
@@ -229,10 +229,10 @@ header nav div{
 
 #boton-inicio a:hover{
     color: rgb(40, 43, 233);
-    
+
 }
 #boton-inicio a{
-    display: block;  
+    display: block;
 }
 
 #boton-inicio:hover{
@@ -241,7 +241,7 @@ header nav div{
 
 /* FOOTER */
 footer{
-    
+
     background: white;
 }
 
@@ -259,7 +259,7 @@ footer a{
     font-size: 13px;
     line-height: 1px;
     color: rgb(133, 128, 128);
-    
+
 }
 
 footer #informacion{
@@ -295,9 +295,3 @@ footer #final p{
     margin: auto;
     margin-bottom: 20px;
 }
-
-
-
-
-
-

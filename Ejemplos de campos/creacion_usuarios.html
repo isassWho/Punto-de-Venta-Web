@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Crear Usuarios</title>
+</head>
+<body>
+    <div class="container-fluid bg-info">
+        <div class="row">
+            <div class="col-8 ml-3 text-dark">
+                <h2>Panel de Administración</h2>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!--nombre, apellido,rol.correo,contraseña,confirm contraseña, guardar-->
+                <h3>Crear Usuario</h3>
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <select class="form-control" name="usuario" id="usuario">
+                            <option value="admin">Admin</option>
+                            <option value="vendedor">Vendedor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="text" id="correo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="clave">Contraseña</label>
+                        <input type="password" id="clave" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="clave2">Confirmar  Contraseña</label>
+                        <input type="password" id="clave2" class="form-control">
+                    </div>
+
+                    <button class="btn btn-info float-right">Guardar</button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!--JQUERY-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!--Popper-->
+    <script src="js/popper.min.js"></script>
+    <!--JavaScript-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    
-    <!--Carrusel-->    
+
+
+    <!--Carrusel-->
     <link rel="stylesheet" href="../Owl/owl.carousel.min.css">
     <link rel="stylesheet" href="../Owl/owl.theme.default.min.css">
-    
-    
+
+
     <title>Cuenta</title>
 
 </head>
@@ -28,23 +28,23 @@
     <header>
         <div class = "menu">
             <div class = "contenedor">
-                
+
                 <div class="logos">
-                    <a href="index.html" name="inicio"><div class="logo-imagen"></div></a>
-                    <a href="index.html"><p class = "logo" style="color: white;">LYON GAMES</p></a>
-                    
+                    <a href="principal.php" name="inicio"><div class="logo-imagen"></div></a>
+                    <a href="principal.php"><p class = "logo" style="color: white;">LYON GAMES</p></a>
+
                 </div>
-                
                 <nav>
                     <ul>
-                        <li><a href="nosotros.html">Nosotros</a></li>
                         <div>
                             <img src="imagenes/account.png" alt="">
-                            <li><a href="cuenta.html">Cuenta</a></li>
+                            <li>
+                                <a href="logica/salir.php">Cuenta</a>
+                            </li>
+                            
                         </div>
                     </ul>
                 </nav>
-                
             </div>
         </div>
 
@@ -57,35 +57,32 @@
                 <button class="tablinks" onclick="openCity(event, 'iniciar-cuenta')">Iniciar Sesión</button>
                 <button class="tablinks" onclick="openCity(event, 'crear-cuenta')">Crear tu Cuenta</button>
             </div>
-            
+
             <!-- Tab content -->
             <div>
                 <div id="iniciar-cuenta" class="tabcontent">
-                    <form action="" method="POST">
-
-                        <input type="email" name = "email" placeholder = "Correo" required>
-                        <input type="password" name = "password" placeholder = "Contraseña" required>
+                    <form action="logica/loguear.php" method="POST">
+                        <input type="email" name = "correo" id="correo"placeholder = "Correo" required>
+                        <input type="password" name = "password" id="password" placeholder = "Contraseña" required>
                         <input type="submit" name="Ingresar" value="Ingresar">
-
                     </form>
                 </div>
-                
-                <div id="crear-cuenta" class="tabcontent">
-                    <form action="" method="POST">
 
-                        <input type="email" name = "email" placeholder = "Correo*" required>
-                        <input type="password" name = "password" placeholder = "Contraseña*" required>
-                        <input type="text" name="nombre" placeholder="Nombre*" required>
-                        <input type="text" name="apellido" placeholder="Apellido*" required>
+                <div id="crear-cuenta" class="tabcontent">
+                    <form action="logica/crear_cuenta.php" method="POST">
+                        <input type="email" name = "correo" id="correo" placeholder = "Correo*" required>
+                        <input type="password" name = "password" id="password" placeholder = "Contraseña*" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre*" required>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido*" required>
                         <div>
                             <p>Campos Requeridos*</p>
                             <p>Al dar click en Crear tu Cuenta, estás aceptando los Términos y Condiciones de Uso de éste sitio.</p>
                         </div>
                         <input type="submit" name="Ingresar" value="Ingresar">
-
+                        
                     </form>
                 </div>
-                
+
             </div>
         </div>
 
@@ -98,7 +95,7 @@
 
     </header>
 
-    
+
     <section id="boton-inicio">
         <div ></div>
             <p><a href="#inicio">Inicio de página</a></p>
@@ -113,7 +110,7 @@
                         <li><a href="">Trabaja con Nosotros</a></li>
                         <li><a href="">Clasificación ESRB</a></li>
                     </ul>
-                    
+
                 </div>
 
                 <div>
@@ -122,7 +119,7 @@
                         <li><a href="">Consulta de Gitcard</a></li>
                     </ul>
 
-                    
+
                 </div>
                 <ul><h4>AYUDA</h4>
                     <li><a href="">Raestro de Pedidos en Línea</a></li>
@@ -136,7 +133,7 @@
                         <li><a href=""><img src="imagenes/facebook.png" alt=""></a></li>
                         <li><a href=""><img src="imagenes/github.png" alt=""></a></li>
                         <li><a href=""><img src="imagenes/medium.png" alt=""></a></li>
-                        
+
                     </ul>
                 </div>
 
@@ -145,10 +142,10 @@
                     <div id="img-formas-de-pago">
 
                     </div>
-                        
-                    
+
+
                 </div>
-    
+
 
 
         </div>
