@@ -13,7 +13,13 @@ $array = mysqli_fetch_array($consulta);
 
 if ($array['CONTAR'] > 0) {
     $_SESSION['email'] = $correo;
-    echo "Estas dentro";
+
+    $sent = "select nombre from usuarios where correo = '$correo'";
+    $cons = mysqli_query($conexion, $sent);
+    $nombre_usuario = mysqli_fetch_array($cons);
+
+    $_SESSION['nombre_usuario'] = $nombre_usuario[0];
+    
     header("Location: ../principal.php");
 }else{
     echo "Datos incorrectos";

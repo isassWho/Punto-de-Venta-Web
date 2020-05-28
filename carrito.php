@@ -79,13 +79,38 @@
                 </div>
                 <div class="contenedor">
                     <div class="carrito">
-                        <div class="encabezado">
-                            <div>Nombre</div>
-                            <div>IdProducto</div>
-                            <div>Descripción</div>
-                            <div>Precio</div>
-                        </div>
-                        <div></div>
+                        
+                        <table class="encabezado" style="display:flex; flex-direction: column;">
+                            <thead>
+                                <tr>
+                                    <th style="width:60%">Descripcion</th>
+                                    <th style="width:30%">Precio</th>
+                                    <th style="width:20%">Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <?php
+                                
+                                include ('logica/conexion.php');
+                                
+                                
+                                $nombre_usuario = $_SESSION['nombre_usuario'];
+                                $query = "SELECT * FROM carrito$nombre_usuario";
+                                $result = mysqli_query($conexion, $query);
+                                while($row = mysqli_fetch_array($result)){ ?>
+                                    <tr>
+                                        <td  style="width:60%"><?php echo $row['descripcion']?></td>
+                                    </tr>
+                                    <tr>
+                                        <td  style="width:60%"><?php echo $row['precio']?></td>
+                                    </tr>
+                                    <tr>
+                                        <a style="display:block;" href="logica/quitar_de_carrito.php?descripcion=<?php echo $row['descripcion'];?>">Eliminar</a>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>    
+                    
                     </div>
                     <div class="total-de-carrito">
                         <div class="logos">
@@ -98,10 +123,9 @@
                             </div>
                         </div>
                         <div class="costo">
-                            <button>Eliminar articulo seleccionado</button>
-                            <p>Articulos: 2</p>
-                            <p>Total a pagar: <strong>1998 mxn</strong> </p>
-                            <form action="">
+                            <p>Articulos: <?php echo (mysqli_num_rows($result)) ?></p>
+                            <p>Total: <strong><?php echo (mysqli_num_rows($result)*999) ?> mxn</strong> </p>
+                            <form action="logica/finalizar_compra.php">
                                 <input type="submit" value="Comprar">
                             </form>
                         </div>

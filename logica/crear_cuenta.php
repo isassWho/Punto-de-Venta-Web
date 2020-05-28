@@ -15,6 +15,13 @@ $usuario = "visitante";
 //setencia
 $sentencia = "insert into usuarios values ('$correo', '$password', '$nombre', '$apellido', '$usuario')";
 
+//crea el carito para el usuario
+$sentenciaCarrito = "create table carrito$nombre(
+    descripcion varchar (100), 
+    precio varchar(20));";
+
+$consulta = mysqli_query($conexion, $sentenciaCarrito);
+
 //hace la consulta
 $consulta = mysqli_query($conexion, $sentencia);
 

@@ -23,7 +23,8 @@ $array = mysqli_fetch_array($consulta);
 //verifica si hay datos en la tabla
 if($array['CONTAR'] > 0){
     echo "Bienvenido";
-    header("Location: ../index.html");
+    echo "Probando" .$array[2];
+    //header("Location: ../index.html");
 }else{
     echo "Datos Incorrectos";
     

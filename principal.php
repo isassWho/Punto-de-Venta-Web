@@ -76,8 +76,9 @@
             <div id="carrusel-principal" class="owl-carousel owl-theme"">
 
                 <div id=" portada-1">
-                <img src="imagenes/portada-1.JPG" alt="">
+                <img src="imagenes/portada-3.JPG" alt="">
             </div>
+            <!--
             <div id="portada-1">
                 <img src="imagenes/portada-2.JPG" alt="">
             </div>
@@ -87,7 +88,7 @@
             <div id="portada-1">
                 <img src="imagenes/portada-4.JPG" alt="">
             </div>
-
+            -->
 
 
         </div>
@@ -107,17 +108,21 @@
                 <div id="carrusel-productos-nintendo" class="owl-carousel owl-theme">
 
                     <div class="item">
+
                         <div class="img-producto">
                             <a href="www.google.com"><img src="imagenes/populares-nintendo-1.jpg" alt=""></a>
                         </div>
+
                         <div class="info-producto">
                             <ul>
                                 <li>Mario Kart Deluxe 8</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
 
-                                <form action="añadir-a-carrito" method="POST">
-                                    <input type="button" value="Añadir al carrito">
+                                <form action="logica/anadir_a_carrito.php" method="POST">
+                                    <?php $_SESSION['descripcion_articulo'] = "Mario Kart 8"?>
+                                    <?php $_SESSION['precio_articulo'] = "999"?>
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
                                 </form>
 
                             </ul>
@@ -129,9 +134,14 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                                <li>Luigi Mansion 3</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+
+                                <form action="logica/anadir_a_carrito.php?descripcion=Luigi Mansion 3" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
+
                             </ul>
                         </div>
                     </div>
@@ -141,9 +151,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                                <li>Zelda Breath of the Wild</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=Zelda Breath of the Wild" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -153,9 +166,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                                <li>FIFA 20</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=FIFA 20" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -165,9 +181,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                                <li>New Super Mario Bros U Deluxe</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=New Super Mario Bros U Deluxe" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -177,9 +196,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
-                                <li>Nuevo</li>
+                            <li>Zelda Links Awakening</li>
+                            <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=Zelda Links Awakening" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -189,9 +211,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                            <li>Super Smash Bros</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=Super Smash Bros" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -201,9 +226,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                            <li>Pokemon Shield</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=Pokemon Shield" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -213,9 +241,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                                <li>Super Mario Odyssey</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=Super Mario Odyssey" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -225,9 +256,12 @@
                         </div>
                         <div class="info-producto">
                             <ul>
-                                <li>Mario Kart Deluxe 8</li>
+                                <li>Super Mario Maker 2</li>
                                 <li>Nuevo</li>
                                 <li>$999 <sup>.99</sup></li>
+                                <form action="logica/anadir_a_carrito.php?descripcion=Super Mario Maker 2" method="POST">
+                                    <input type="submit" name="anadir_a_carrito" value="Añadir al carrito">
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -730,7 +764,7 @@
     <script>
 
         $('#carrusel-productos-nintendo').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: true,
             dots: false,
@@ -752,7 +786,7 @@
     <script>
 
         $('#carrusel-productos-playstation').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: true,
             dots: false,
@@ -774,7 +808,7 @@
     <script>
 
         $('#carrusel-productos-xbox-one').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: true,
             dots: false,
@@ -796,7 +830,7 @@
     <script>
 
         $('#carrusel-productos-coleccionables').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: true,
             dots: false,
@@ -819,7 +853,7 @@
     <script>
 
         $('#carrusel-principal').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: true,
             dots: false,
